@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.AyurSutra" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        
+        <!-- Secondary brand colors -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/text_on_secondary</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_variant</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        
+        <!-- Text appearance -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.AyurSutra.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.AyurSutra.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.AyurSutra.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.AyurSutra.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.AyurSutra.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.AyurSutra.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.AyurSutra.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.AyurSutra.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AyurSutra.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.AyurSutra.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.AyurSutra.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.AyurSutra.Button</item>
+        
+        <!-- Shape appearance for components -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.AyurSutra.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.AyurSutra.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.AyurSutra.LargeComponent</item>
+    </style>
+    
+    <!-- Splash screen theme -->
+    <style name="SplashTheme" parent="Theme.AyurSutra">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+    
+    <!-- Shape appearances for rounded corners -->
+    <style name="ShapeAppearance.AyurSutra.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    
+    <style name="ShapeAppearance.AyurSutra.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    
+    <style name="ShapeAppearance.AyurSutra.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    
+    <!-- Text appearances -->
+    <style name="TextAppearance.AyurSutra.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">96sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="TextAppearance.AyurSutra.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

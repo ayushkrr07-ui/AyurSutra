@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ayusutra.app">
+
+    <!-- Internet permission for API calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- For notifications -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".AyurSutraApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AyurSutra">
+        
+        <!-- Splash Screen -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Onboarding Activity -->
+        <activity
+            android:name=".ui.onboarding.OnboardingActivity"
+            android:exported="false" />
+            
+        <!-- Main Activity -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+            
+        <!-- Therapy Schedule Activity -->
+        <activity
+            android:name=".ui.schedule.TherapyScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.main.MainActivity" />
+            
+        <!-- Therapy Booking Activity -->
+        <activity
+            android:name=".ui.schedule.TherapyBookingActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.schedule.TherapyScheduleActivity" />
+            
+        <!-- Notifications Activity -->
+        <activity
+            android:name=".ui.notifications.NotificationsActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.main.MainActivity" />
+            
+        <!-- Therapy Tracking Activity -->
+        <activity
+            android:name=".ui.tracking.TherapyTrackingActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.main.MainActivity" />
+            
+        <!-- Notification Service -->
+        <service
+            android:name=".services.NotificationService"
+            android:exported="false" />
+            
+        <!-- Notification Receiver -->
+        <receiver
+            android:name=".receivers.NotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
