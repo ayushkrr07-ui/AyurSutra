@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/doctor-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="" alt="Profile" class="avatar">
+                <div class="brand-text">
+                    <h4>AyurSutra</h4>
+                    <p class="role">Practitioner</p>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Patients</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="#">Settings</a>
+                <a href="index.html">Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div>
+                    <h1>Practitioner Dashboard</h1>
+                    <p class="welcome">Welcome back, Dr. Ananya Sharma</p>
+                </div>
+                <div class="header-actions">
+                    <button id="add-patient" class="btn btn-primary">+ Add New Patient</button>
+                    <button class="icon-btn" aria-label="Notifications">🔔</button>
+                </div>
+            </header>
+
+            <section class="content-grid">
+                <div class="left-col">
+                    <section class="today-schedule card">
+                        <h2>Today's Schedule</h2>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>PATIENT</th>
+                                    <th>TIME</th>
+                                    <th>THERAPY</th>
+                                    <th>ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rohan Verma</td>
+                                    <td>09:00 AM</td>
+                                    <td>Abhyanga</td>
+                                    <td><a href="#">View Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Priya Singh</td>
+                                    <td>11:00 AM</td>
+                                    <td>Shirodhara</td>
+                                    <td><a href="#">View Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Amit Patel</td>
+                                    <td>02:30 PM</td>
+                                    <td>Swedana</td>
+                                    <td><a href="#">View Details</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="therapy-overview">
+                        <h2>Therapy Progress Overview</h2>
+                        <div class="therapy-cards">
+                            <div class="therapy-card card">
+                                <h3>Patient: Kavita Rao</h3>
+                                <p class="therapy">Therapy: Vamana</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:75%"></div>
+                                </div>
+                                <p class="progress-text">Progress: <strong>75%</strong></p>
+                                <button class="btn btn-ghost">Adjust Plan</button>
+                            </div>
+
+                            <div class="therapy-card card">
+                                <h3>Patient: Sameer Gupta</h3>
+                                <p class="therapy">Therapy: Virechana</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:40%"></div>
+                                </div>
+                                <p class="progress-text">Progress: <strong>40%</strong></p>
+                                <button class="btn btn-ghost">Adjust Plan</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="right-col">
+                    <section class="feedback card">
+                        <h3>Recent Patient Feedback</h3>
+                        <div class="feedback-item">
+                            <img src="" alt="Rohan" class="fb-avatar">
+                            <div class="fb-body">
+                                <div class="fb-header">
+                                    <strong>Rohan Verma</strong>
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <p class="fb-text">"Feeling much more relaxed after the Abhyanga session. The therapist was very professional."</p>
+                            </div>
+                        </div>
+
+                        <div class="feedback-item">
+                            <img src="" alt="Priya" class="fb-avatar">
+                            <div class="fb-body">
+                                <div class="fb-header">
+                                    <strong>Priya Singh</strong>
+                                    <span class="stars">★★★★☆</span>
+                                </div>
+                                <p class="fb-text">"The Shirodhara was a unique experience. I have a few suggestions for the post-therapy care."</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="view-all">View All Feedback</a>
+                    </section>
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/doctor-dashboard.js"></script>
+</body>
+</html>

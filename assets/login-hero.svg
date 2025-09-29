@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#e8f8ee"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g1)"/>
+  <!-- Simple illustrative shapes to mimic a healthcare hero -->
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" width="480" height="320" rx="12" fill="#fff" opacity="0.9"/>
+    <path d="M60 220 q60 -120 180 -120 q120 0 180 120" fill="#dff7e9"/>
+    <circle cx="300" cy="100" r="60" fill="#1eaf63" opacity="0.95"/>
+    <rect x="40" y="260" width="380" height="14" rx="7" fill="#e6f2ec"/>
+    <rect x="40" y="290" width="300" height="14" rx="7" fill="#e6f2ec"/>
+    <g transform="translate(480,40)">
+      <circle cx="80" cy="80" r="40" fill="#fff" stroke="#e6f2ec" stroke-width="6"/>
+      <path d="M60 72 h40 v16 h-40 z" fill="#1eaf63"/>
+    </g>
+  </g>
+  <!-- decorative leaves -->
+  <g transform="translate(820,240) rotate(-12)">
+    <ellipse cx="0" cy="0" rx="120" ry="40" fill="#eaf7ef"/>
+    <ellipse cx="40" cy="-10" rx="90" ry="30" fill="#dff7e9"/>
+  </g>
+</svg>

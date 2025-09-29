@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/clinic-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Clinic Portal</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="#"><span class="icon">📊</span> Dashboard</a></li>
+                <li><a href="#"><span class="icon">👥</span> Patients</a></li>
+                <li><a href="#"><span class="icon">👨‍⚕️</span> Doctors</a></li>
+                <li><a href="#"><span class="icon">📅</span> Appointments</a></li>
+                <li><a href="#"><span class="icon">💰</span> Billing</a></li>
+                <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
+                <li><a href="index.html"><span class="icon">🚪</span> Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h2>Welcome, City Health Clinic</h2>
+                <p>Today: <span id="current-date"></span></p>
+            </div>
+            <div class="availability-section">
+                <h3>Doctor Availability</h3>
+                <div class="availability-container">
+                    <div class="availability-card">
+                        <div class="doctor-info">
+                            <h4>Dr. John Smith</h4>
+                            <p>Cardiologist</p>
+                        </div>
+                        <div class="availability-status available">
+                            <span>Available</span>
+                        </div>
+                        <div class="availability-time">
+                            <p>9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="availability-card">
+                        <div class="doctor-info">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p>Pediatrician</p>
+                        </div>
+                        <div class="availability-status busy">
+                            <span>Busy</span>
+                        </div>
+                        <div class="availability-time">
+                            <p>10:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="availability-card">
+                        <div class="doctor-info">
+                            <h4>Dr. Michael Brown</h4>
+                            <p>Dermatologist</p>
+                        </div>
+                        <div class="availability-status unavailable">
+                            <span>Unavailable</span>
+                        </div>
+                        <div class="availability-time">
+                            <p>Off today</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="update-availability-btn">Update Availability</button>
+            </div>
+            <div class="smart-token-system">
+                <h3>Smart Token System</h3>
+                <div class="token-container">
+                    <div class="current-token">
+                        <h4>Current Token</h4>
+                        <div class="token-number">A-15</div>
+                        <p>Patient: John Doe</p>
+                        <p>Doctor: Dr. Smith</p>
+                    </div>
+                    <div class="next-tokens">
+                        <h4>Next Tokens</h4>
+                        <ul>
+                            <li><span class="token">A-16</span> - Jane Smith (Dr. Johnson)</li>
+                            <li><span class="token">A-17</span> - Robert Brown (Dr. Smith)</li>
+                            <li><span class="token">A-18</span> - Emily Davis (Dr. Brown)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="token-actions">
+                    <button class="next-token-btn">Next Token</button>
+                    <button class="alert-message-btn">Send Alert Message</button>
+                </div>
+            </div>
+            <div class="clinic-stats">
+                <div class="card">
+                    <h3>Today's Appointments</h3>
+                    <p class="stat">32</p>
+                    <p>8 completed, 24 remaining</p>
+                </div>
+                <div class="card">
+                    <h3>Average Wait Time</h3>
+                    <p class="stat">15 min</p>
+                    <p>5 min less than yesterday</p>
+                </div>
+                <div class="card">
+                    <h3>Patient Satisfaction</h3>
+                    <p class="stat">4.7/5</p>
+                    <p>Based on 45 reviews today</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/clinic-dashboard.js"></script>
+</body>
+</html>
